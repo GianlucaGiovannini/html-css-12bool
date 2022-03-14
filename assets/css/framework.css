@@ -30,11 +30,34 @@
     align-items: center;
 }
 
+.gap-25 {
+    gap: 25px;
+}
+
+
+/* color */
+
+.text-white {
+    color: white;
+}
+
 
 /* dimension */
 
 .h-max {
     height: 100%;
+}
+
+.h-30 {
+    height: 30px;
+}
+
+.h-300 {
+    height: 300px;
+}
+
+.h-400 {
+    height: 400px;
 }
 
 
@@ -48,16 +71,15 @@
     margin-bottom: 30px;
 }
 
+.mb-100 {
+    margin-bottom: 100px;
+}
+
 
 /* #endregion utility */
 
 
 /* #region Grid structure */
-
-.container-lg {
-    max-width: 1170px;
-    margin: 0 auto;
-}
 
 .row {
     display: flex;
@@ -68,7 +90,7 @@
 
 /* #region grid automatically */
 
-[class*="col-"] {
+[class*="col"] {
     flex: 0 0 auto;
 }
 
@@ -360,6 +382,15 @@
 }
 
 @media screen and (min-width: 992px) {
+    .container {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    .col {
+        flex-grow: 1;
+        flex-basis: 0;
+        max-width: 100%;
+    }
     .col-lg-1 {
         flex-basis: calc((100% / 12) * 1);
         max-width: calc((100% / 12) * 1);
