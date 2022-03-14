@@ -1,47 +1,79 @@
-/* common */
-
-a {
-    text-decoration: none;
-}
-
-
-/* header */
-
-#site_header {
-    height: 100%;
-}
-
-#site_header [class^="col"] {
-    background-color: #6c7dd9;
-    border: 1px solid white;
-}
-
-#site_header img {
-    height: 80px;
-}
-
-#site_header .row {
-    height: 90px;
-}
-
-#site_header a {
-    margin: 0 0.7rem;
-    color: white;
-}
-
-
-/* main */
-
-#site_main .hero-container {
-    width: 100%;
-    height: calc(100vh - 90px);
-    background-image: url(https://media0.giphy.com/media/BHNfhgU63qrks/giphy.gif);
-    background-size: cover;
-    background-position: center;
-}
-
-.container [class^="col"] {
-    background-color: rgba(119, 42, 190, 0.822);
-    border-radius: 25px;
-    box-shadow: 9px 13px 0px 10px rgb(59 50 81);
-}
+                            /* common */
+                        
+                        a {
+                            text-decoration: none;
+                        }
+                        
+                        ul {
+                            list-style: none;
+                        }
+                        /* header */
+                        
+                        #site_header {
+                            height: 100%;
+                        }
+                        
+                        #site_header [class^="col"] {
+                            background-color: #6c7dd9;
+                            border: 1px solid white;
+                        }
+                        
+                        #site_header img {
+                            height: 80px;
+                        }
+                        
+                        #site_header .row {
+                            height: 90px;
+                        }
+                        
+                        #site_header a {
+                            margin: 0 0.7rem;
+                            color: white;
+                        }
+                        /* main */
+                        
+                        .hero-container {
+                            width: 100%;
+                            height: calc(100vh - 90px);
+                            background-image: url(https://media0.giphy.com/media/BHNfhgU63qrks/giphy.gif);
+                            background-size: cover;
+                            background-position: center;
+                        }
+                        
+                        .container>.row.first [class^="col"] {
+                            background-color: rgba(119, 42, 190, 0.822);
+                            border-radius: 25px;
+                            box-shadow: 9px 13px 0px 10px rgb(59 50 81);
+                        }
+                        
+                        .container>.row.second {
+                            justify-content: space-evenly;
+                            row-gap: 30px;
+                        }
+                        
+                        .container>.row.second [class^="col"] {
+                            background-color: rgb(59 50 81);
+                            box-shadow: 6px 20px 3px 4px rgb(119 42 190 / 82%);
+                            border-radius: 15px;
+                        }
+                        /* footer */
+                        
+                        #site_footer {
+                            background-color: black;
+                            color: white;
+                            padding: 50px;
+                        }
+                        
+                        #site_footer .row {
+                            row-gap: 15px;
+                        }
+                        
+                        #site_footer img {
+                            height: 50px;
+                            filter: invert(1);
+                        }
+                        
+                        #site_footer>.container>.row>[class^="col"] {
+                            padding: 0 0 15px 15px;
+                            border-right: 1px solid #65446d;
+                            border-bottom: 2px solid #65446d

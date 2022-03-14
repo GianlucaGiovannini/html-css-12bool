@@ -30,8 +30,8 @@
     align-items: center;
 }
 
-.gap-25 {
-    gap: 25px;
+.gap-60 {
+    gap: 60px;
 }
 
 
@@ -50,6 +50,10 @@
 
 .h-30 {
     height: 30px;
+}
+
+.h-200 {
+    height: 200px;
 }
 
 .h-300 {
