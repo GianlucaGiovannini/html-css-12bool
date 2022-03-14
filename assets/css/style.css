@@ -1,0 +1,18 @@
+:root {
+    --col-blue: #006cfa;
+    --col-green: #00e165;
+}
+
+[class^="col"] {
+    background-color: var(--col-blue);
+    color: white;
+    border: 1px solid white;
+    height: 80px;
+}
+
+.nested {
+    background-color: var(--col-green);
+    border: 1px solid var(--col-blue);
+    padding: 0;
+    height: 100%;
+}
